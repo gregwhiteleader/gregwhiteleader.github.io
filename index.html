@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Greg White | Executive PMO & Agile Leader</title>
+  <meta name="description" content="Greg White — PMO Strategy · Agile Transformation · AI for Leaders" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#top" class="brand">
+        <img src="assets/logo.svg" alt="GW Logo" class="logo" />
+        <span>Greg White</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn small" type="button">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Executive PMO & Agile Leader</h1>
+          <p class="lead">PMO Strategy · Agile Transformation · AI for Leaders</p>
+          <div class="actions">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+          <div class="tags">
+            <span class="tag">PMO</span><span class="tag">SAFe</span><span class="tag">Portfolio</span><span class="tag">AI</span>
+          </div>
+        </div>
+        <div class="card hero-card">
+          <img src="assets/portrait-placeholder.png" alt="Greg White portrait placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About</h2>
+        <p>Driving strategy→execution with governance, Lean Portfolio Management, and practical Agile. Integrating AI for decision support and transparency.</p>
+        <ul class="bullets">
+          <li>Stand up / modernize Enterprise PMO</li>
+          <li>Scale Agile with measurable outcomes</li>
+          <li>Executive-ready reporting & operating cadence</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>AI Coaching Copilot</h3>
+            <p>No-code prototype for executive PMO coaching and delivery support.</p>
+            <a class="btn small" href="#" target="_blank" rel="noopener">View</a>
+          </article>
+          <article class="card">
+            <h3>Udemy: Agile Mastery</h3>
+            <p>Practical Agile patterns, templates, and coaching tips.</p>
+            <a class="btn small" href="#" target="_blank" rel="noopener">Course</a>
+          </article>
+          <article class="card">
+            <h3>Executive Dashboards</h3>
+            <p>OKR → Portfolio → Delivery rollups with stakeholder-first reporting.</p>
+            <a class="btn small" href="#" target="_blank" rel="noopener">Case Study</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="wrap">
+        <h2>Resume</h2>
+        <p><a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a></p>
+        <div class="pdf-embed">
+          <object data="assets/resume.pdf" type="application/pdf" width="100%" height="520">
+            <p>Your browser can’t display PDFs inline. <a href="assets/resume.pdf" target="_blank" rel="noopener">Open the resume</a>.</p>
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>Best intro: one problem, one outcome, one constraint.</p>
+        <p>
+          <a class="btn" href="mailto:youremail@example.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/gregwhiteleader" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="y"></span> Greg White · <a href="https://gregwhiteleader.github.io">https://gregwhiteleader.github.io</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const toggle = () => { const dark = root.hasAttribute('data-theme');
+      if (dark) { root.removeAttribute('data-theme'); btn.textContent = 'Dark'; localStorage.removeItem('theme'); }
+      else { root.setAttribute('data-theme','dark'); btn.textContent = 'Light'; localStorage.setItem('theme','dark'); }
+    };
+    if (localStorage.getItem('theme') === 'dark') { root.setAttribute('data-theme','dark'); btn.textContent = 'Light'; }
+    btn.addEventListener('click', toggle);
+  </script>
+</body>
+</html>
