@@ -29,7 +29,7 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 .card{background:#fff;border:1px solid #e5e7ee;border-radius:16px;padding:18px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
 :root[data-theme="dark"] .card{background:#12121a;border-color:#222436}
 /*.hero-card img{display:block;max-width:100%;border-radius:12px}*/
-.hero-card img {display: block; max-width: 250px; /* or 300px */margin: 0 auto;/* centers the photo */border-radius: 12px;}
+.hero-card {display: flex;justify-content: center;align-items: center;max-width: 260px;/* keeps the card narrower */margin: 0 auto;/* centers the card in its column */}
 .section{padding:56px 0}
 .section.alt{background:rgba(59,91,219,.06)}
 :root[data-theme="dark"] .section.alt{background:rgba(155,135,245,.06)}
