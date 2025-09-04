@@ -18,6 +18,7 @@
   <!-- Favicon (optional) -->
   <link rel="icon" href="/assets/favicon.ico">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,10 @@
 <body>
   <div class="wrap">
     <header class="site-header">
-      <a href="#" class="brand">Greg White</a>
+      <a href="#" class="brand">
+        <img class="logo" src="assets/favicon-32.png" alt="" aria-hidden="true">
+        Greg White
+      </a>
       <nav class="nav">
         <a href="#projects">Initiatives</a>
         <a href="#contact">Contact</a>
@@ -54,7 +58,7 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="hero-grid">
+        <div class="hero-grid"><!-- uses your grid & hero styles -->
           <div>
             <h1>Coach Greg • PMO & Agile Transformation Leader</h1>
             <p class="lead">
@@ -67,7 +71,19 @@
               <a class="btn ghost" href="#projects">See Initiatives</a>
               <a class="btn ghost" href="#contact">Contact</a>
             </div>
+            <div class="tags">
+              <span class="tag">PMO</span>
+              <span class="tag">SAFe / LPM</span>
+              <span class="tag">ERP & SaaS</span>
+              <span class="tag">AI for Leaders</span>
+            </div>
           </div>
+
+          <!-- Photo block -->
+          <aside class="hero-card">
+            <!-- Place your image at /assets/greg.jpg (any ~600–1000px wide photo) -->
+            <img src="assets/greg.jpg" alt="Greg White" loading="eager" decoding="async">
+          </aside>
         </div>
       </section>
 
@@ -91,6 +107,24 @@
             <h3>Ask Coach Greg (Prototype)</h3>
             <p>Lightweight AI coaching companion for Scrum Masters, Product Owners, and PMO leaders.</p>
             <a class="btn small" href="https://ask-coach-greg.streamlit.app/" target="_blank" rel="noopener">Try Prototype</a>
+          </article>
+
+          <article class="card">
+            <h3>SAP UAT Program — Salad to Go</h3>
+            <p>Program management for S/4HANA UAT readiness: scope alignment, cutover checkpoints, and defect triage cadence.</p>
+            <a class="btn small ghost" href="#" aria-disabled="true">Summary (soon)</a>
+          </article>
+
+          <article class="card">
+            <h3>Eta Mu Mu Life Link (501(c)(8))</h3>
+            <p>Bylaws & governance for life-membership fund: disbursement caps, reserves, and transparent reporting.</p>
+            <a class="btn small ghost" href="#" aria-disabled="true">Bylaws (soon)</a>
+          </article>
+
+          <article class="card">
+            <h3>AI Coaching + Dashboard Kit</h3>
+            <p>No-code starter: Custom GPT + Sheets template for leaders to track outcomes, risks, and OKRs.</p>
+            <a class="btn small ghost" href="#" aria-disabled="true">Download (soon)</a>
           </article>
         </div>
       </section>
