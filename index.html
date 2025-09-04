@@ -5,20 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Greg White | Senior PMO Director | Enterprise Transformation Leader</title>
   <meta name="description" content="Greg White — PMO Strategy · Agile Transformation · Lean Portfolio Management · AI for Leaders" />
-  <link rel="canonical" href="https://gregwhiteleader.github.io/" />
-
-  <!-- Social preview -->
-  <meta property="og:title" content="Greg White — PMO & Enterprise Transformation Leader" />
-  <meta property="og:description" content="Strategy → Delivery. PMO, SAFe/LPM, ERP/SaaS. AI-enabled dashboards & executive coaching." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://gregwhiteleader.github.io/" />
-  <!-- Optional: add /assets/preview.jpg (1200×630) to show a rich card -->
-  <meta property="og:image" content="https://gregwhiteleader.github.io/assets/preview.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Favicon (optional: place file in /assets/) -->
-  <link rel="icon" href="assets/favicon.ico" />
-
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,18 +78,18 @@
           <article class="card">
             <h3>Agile Training & Coaching</h3>
             <p>Developed and delivered an Agile Mastery program with 1,000+ learners worldwide, improving leadership maturity and practical Agile skills.</p>
-            <a class="btn small" href="https://www.udemy.com/course/agile-scrum-certifications-coachgreg" target="_blank" rel="noopener">View Course</a>
+            <a class="btn small" href="https://www.udemy.com/course/agile-scrum-certifications-coachgreg" target="_blank">View Course</a>
           </article>
           <article class="card">
             <h3>Executive Portfolio Dashboards</h3>
             <p>Created OKR → Portfolio → Delivery rollups; enabled stakeholder-first reporting and outcome tracking.</p>
-            <a class="btn small" href="https://lookerstudio.google.com/reporting/7037a131-4a84-453a-845d-f060c91abf14" target="_blank" rel="noopener">Portfolio Dashboard</a>
+           <a class="btn small" href="https://lookerstudio.google.com/reporting/7037a131-4a84-453a-845d-f060c91abf14" target="_blank">Portfolio Dashboard</a>
           </article>
           <article class="card">
             <h3>AI Coaching Copilot</h3>
             <p>AI-assisted prioritization and executive coaching for PMO leaders — enabling faster, smarter decision-making.</p>
-            <a class="btn small" href="https://ask-coach-greg.streamlit.app/" target="_blank" rel="noopener">Ask Coach Greg</a>
-          </article>
+            <a class="btn small" href="https://ask-coach-greg.streamlit.app/" target="_blank">Ask Coach Greg</a>
+           </article>
         </div>
       </div>
     </section>
@@ -126,8 +112,8 @@
         <div class="contact-cards">
           <div class="card small">
             <h3>Direct</h3>
-            <p>Little Elm, TX • <a href="tel:+14692161185">(469) 216-1185</a></p>
-            <p><a href="mailto:gregwhiteleader@gmail.com">gregwhiteleader@gmail.com</a></p>
+            <p>Little Elm, TX • (469) 216-1185</p>
+            <p><a href="mailto:gwhite1911@yahoo.com">gwhite1911@yahoo.com</a></p>
           </div>
           <div class="card small">
             <h3>Links</h3>
@@ -150,8 +136,7 @@
     document.getElementById("y").textContent = new Date().getFullYear();
     const root = document.documentElement;
     const btn = document.getElementById('themeToggle');
-    const toggle = () => {
-      const dark = root.hasAttribute('data-theme');
+    const toggle = () => { const dark = root.hasAttribute('data-theme');
       if (dark) { root.removeAttribute('data-theme'); btn.textContent = 'Dark'; localStorage.removeItem('theme'); }
       else { root.setAttribute('data-theme','dark'); btn.textContent = 'Light'; localStorage.setItem('theme','dark'); }
     };
